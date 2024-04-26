@@ -43,6 +43,59 @@ const columns = [
         })}
       </div>
     ),
+    filters: [
+      {
+        text: "mystery",
+        value: "mystery",
+      },
+      {
+        text: "american",
+        value: "american",
+      },
+      {
+        text: "history",
+        value: "history",
+      },
+      {
+        text: "love",
+        value: "love",
+      },
+      {
+        text: "english",
+        value: "english",
+      },
+      {
+        text: "classic",
+        value: "classic",
+      },
+      {
+        text: "french",
+        value: "french",
+      },
+      {
+        text: "fiction",
+        value: "fiction",
+      },
+      {
+        text: "crime",
+        value: "crime",
+      },
+      {
+        text: "magical",
+        value: "magical",
+      },
+      {
+        text: "Evolution",
+        value: "Evolution",
+      },
+      {
+        text: "Peace",
+        value: "Peace",
+      },
+    ],
+    filterMode: "tree",
+    filterSearch: true,
+    onFilter: (value, record) => record.tags.includes(value),
   },
   {
     title: "Reactions",
